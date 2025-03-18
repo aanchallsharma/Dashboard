@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=card_membership" />
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <aside>
+            <div class="logo">
+    <img src="image.png" class="img" alt="User Profile Picture">
+    <h1>Ken Kalil</h1>
+    <a href="mailto:kenk@gmail.com" aria-label="Email Ken Kalil">kenk@gmail.com</a>
+</div>
+            <hr class="custom-hr">
+            <div class="menu">
+                <a href="#">
+                    <i class="fa-solid fa-sliders"></i>
+                    <h6>DASHBOARD</h6>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h6>ACCOUNT PROFILE</h6>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h6>EXERCISE PLAN</h6>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h6>DIET PLANS</h6>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <h6>SUBSCRIPTIONS</h6>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <h6>EXTRA SERVICES</h6>
+                </a>
+                <hr class="custom-hr">
+            <div>
+                <button class="btn">LOG OUT</button>
+            </div>
+            </div>
+            
+        </aside>
+
+        <main class="content">
+            <header>
+                <h2>PERSONAL PROGRESS</h2>
+                <button class="contact-btn">CONTACT SUPPORT</button>
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <canvas id="Chart"></canvas>
+                </div>
+                <div class="card">
+                    <h3>Cardio</h3>
+                    <canvas id="cardioChart"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3>Climbing Inclination</h3>
+                    <canvas id="climbingChart"></canvas>
+                </div>
+
+                <div class="card progress-tracking">
+                    <h3>Progress Tracking</h3>
+                    <canvas id="progressChart"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3>Weekly Goal Achieved</h3>
+                    <canvas id="goalChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
 </body>
 </html>
