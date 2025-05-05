@@ -184,13 +184,24 @@ font-weight: 700;
     text-align: center;
 }
 
-.card img{
+.card div{
     width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    margin-top: 10px;
+    max-height: 250px;
 }
 
 .progress-tracking{
     grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+/* For even smaller screens, switch to 1 column */
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
 }
